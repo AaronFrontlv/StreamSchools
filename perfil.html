@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@700&display=swap" rel="stylesheet">       
+    <title>Proyecto 2</title>
+</head>
+<body>
+    <main class="estructura">
+        <nav class="lateral">
+            <div class="logo">
+                <img src="/Archivos/twitch.svg" alt="Logo de la web, similar al de twitch">
+            </div>
+            <nav class="navegador">
+                <div class="nav__opcion miPerfil Focus">
+                    <a href="perfil.html" class="p-desktopblack">Mi perfil</a>
+                </div>
+                <div class="nav__opcion misCursos noFocus">
+                    <a href="misCursos.html" class="p-desktopwhite">Mis cursos</a>
+                </div>
+                <div class="nav__opcion explorarCursos noFocus">
+                    <a href="Explorar.html" class="p-desktopwhite">Explorar Cursos</a>
+                </div>
+                <div class="nav__opcion Rivales noFocus">
+                    <a href="Rivales.html" class="p-desktopwhite">Rivales</a>
+                </div>
+                <div class="nav__opcion Coaches noFocus">
+                    <a href="Coaches.html" class="p-desktopwhite">Coaches</a>
+                </div>
+            </nav>
+           <div class="populares">
+            <p class="p-desktopwhite">Coaches mas populares</p>
+           </div>
+           <div class="nav__coach">
+            <div class="coach_cont">
+                <div class="coach_foto coach1"></div>
+                <div>
+                <p class="p-desktopwhite">David Alcaparra</p>
+                <p class="psec-desktopwhite">75 Estudiantes</p>
+            </div>
+            </div>
+            <div class="coach_cont">
+                <div class="coach_foto coach2"></div>
+                <div>
+                <p class="p-desktopwhite">Lee Alexander</p>
+                <p class="psec-desktopwhite">67 Estudiantes</p>
+            </div>
+            </div>
+            <div class="coach_cont">
+                <div class="coach_foto coach3"></div>
+                <div>
+                <p class="p-desktopwhite">Maria Gracia</p>
+                <p class="psec-desktopwhite">50 Estudiantes</p>
+            </div>
+            </div>
+            <div class="coach_cont ">
+                <div class="coach_foto coach4"></div>
+                <div>
+                <p class="p-desktopwhite">Alejandro Valverde</p>
+                <p class="psec-desktopwhite">45 Estudiantes</p>
+            </div>
+            </div>
+           </div>
+        </nav>
+        <article class="centro">
+            <header>
+                <h2 class="h2-desktopwhite">Mi perfil</h2>
+            </header>
+            <article class="misDatos">
+                <div class="datos_flex">
+                <div class="avatar">
+                    <div class="foto__avatar"></div>
+                    <div class="cambio__avatar">
+                        <p class="p-desktopwhite">Cambiar avatar</p>
+                    </div>
+                </div>
+            <div class="campos">
+               <p class="psec-desktopwhite">Nombre</p>
+               <div class="recuadro">
+                   <p class="p-desktopwhite">Sergio Lopez</p>
+               </div> 
+               <p class="psec-desktopwhite">Nombre de usuario</p>
+               <div class="recuadro">
+                   <p class="p-desktopwhite">Kvote</p>
+               </div>
+               <p class="psec-desktopwhite">Correo electrónico</p>
+               <div class="recuadro">
+                   <p class="p-desktopwhite">Sergio Lopez</p>
+               </div>  
+               <p class="psec-desktopwhite">Contraseña</p>
+               <div class="recuadro">
+                   <p class="p-desktopwhite">Contraseña actual</p>
+               </div> 
+               <div class="recuadro">
+                   <p class="p-desktopwhite">Introducir nueva contraseña</p>
+               </div> 
+               <input type="button" class="p-boton guardar" value="Guardar cambios" onclick="perfil()">
+            </div>
+           
+            </div>
+            </article>
+        </article>
+    </main>
+    <main class="mobile">
+        <header class="cabecera">
+            <div class="sec__cabecera">
+                <img src="/Archivos/twitch.svg" alt="Logo de la web">
+            </div>
+            <div class="sec__cabecera">
+                <h3 class="h3-mobilewhite">Perfil</h3>
+            </div>
+            <div class="sec__cabecera" onclick="perfil()">
+                <img src="/Archivos/user.svg" alt="Icono similando un torso y una cabeza humanos, indicando el perfil">
+            </div>
+        </header>
+        <article class="cuerpo">
+            <div class="avatar_mobile">
+                <div class="foto__avatar"></div>
+                <p class="p-desktopwhite">Kvothe</p>
+            </div>
+            <div class="perfil_mobile">
+                <p class="psec-desktopwhite">Nombre</p>
+               <div class="recuadro">
+                   <p class="p-desktopwhite">Sergio Lopez</p>
+               </div> 
+            </div>
+            <div class="perfil_mobile">
+                <p class="psec-desktopwhite">Nombre de usuario</p>
+               <div class="recuadro">
+                   <p class="p-desktopwhite">Kvothe</p>
+               </div> 
+            </div>
+            <div class="perfil_mobile">
+                <p class="psec-desktopwhite">Contraseña</p>
+               <div class="recuadro">
+                   <p class="p-desktopwhite">Introducir contraseña</p>
+               </div>
+               <div class="recuadro">
+                   <p class="p-desktopwhite">Nueva contraseña</p>
+               </div> 
+            </div>
+            <div class="perfil_mobile">
+                <p class="psec-desktopwhite">Correo electrónico</p>
+               <div class="recuadro">
+                   <p class="p-desktopwhite">Kvothe@gmail.com</p>
+               </div> 
+            </div>
+            
+        </article>
+    </main>
+    <main class="mobile2">
+        <header class="cabecera">
+            <div class="sec__cabecera" onclick="mainMobile()">
+                <img src="/Archivos/twitch.svg" alt="Logo de la web">
+            </div>
+            <div class="sec__cabecera">
+                <h3 class="h3-mobilewhite">Perfil</h3>
+            </div>
+            <div class="sec__cabecera" onclick="perfil()">
+                <img src="/Archivos/user.svg" alt="Icono similando un torso y una cabeza humanos, indicando el perfil">
+            </div>
+        </header>
+        <div class="perfil_mobile">
+            <p class="psec-desktopwhite">Avatar</p>
+           <div class="recuadro">
+               <p class="p-desktopwhite">Examinar</p>
+           </div> 
+        </div>
+        <div class="guardar__mobile">
+            <p class="p-desktopwhite">
+                <a href="#">Guardar cambios</a></p>
+        </div>
+    </main>
+    <script src="/JavaScript/main.js"></script>
+</body>
+</html>

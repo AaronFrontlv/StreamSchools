@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/misCursos_cursos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@700&display=swap" rel="stylesheet">       
+    <title>Proyecto 2</title>
+</head>
+<body>
+    <main class="estructura">
+        <nav class="lateral">
+            <div class="logo">
+                <img src="/Archivos/twitch.svg" alt="Logo de la web, similar al de twitch">
+            </div>
+            <nav class="navegador">
+                <div class="nav__opcion miPerfil noFocus">
+                    <a href="perfil.html" class="p-desktopwhite">Mi perfil</a>
+                </div>
+                <div class="nav__opcion misCursos Focus">
+                    <a href="misCursos.html" class="p-desktopblack">Mis cursos</a>
+                </div>
+                <div class="nav__opcion explorarCursos noFocus">
+                    <a href="Explorar.html" class="p-desktopwhite">Explorar Cursos</a>
+                </div>
+                <div class="nav__opcion Rivales noFocus">
+                    <a href="Rivales.html" class="p-desktopwhite">Rivales</a>
+                </div>
+                <div class="nav__opcion Coaches noFocus">
+                    <a href="Coaches.html" class="p-desktopwhite">Coaches</a>
+                </div>
+            </nav>
+           <div class="populares">
+            <p class="p-desktopwhite">Coaches mas populares</p>
+           </div>
+           <div class="nav__coach">
+            <div class="coach_cont">
+                <div class="coach_foto coach1"></div>
+                <div>
+                <p class="p-desktopwhite">David Alcaparra</p>
+                <p class="psec-desktopwhite">75 Estudiantes</p>
+            </div>
+            </div>
+            <div class="coach_cont">
+                <div class="coach_foto coach2"></div>
+                <div>
+                <p class="p-desktopwhite">Lee Alexander</p>
+                <p class="psec-desktopwhite">67 Estudiantes</p>
+            </div>
+            </div>
+            <div class="coach_cont">
+                <div class="coach_foto coach3"></div>
+                <div>
+                <p class="p-desktopwhite">Maria Gracia</p>
+                <p class="psec-desktopwhite">50 Estudiantes</p>
+            </div>
+            </div>
+            <div class="coach_cont ">
+                <div class="coach_foto coach4"></div>
+                <div>
+                <p class="p-desktopwhite">Alejandro Valverde</p>
+                <p class="psec-desktopwhite">45 Estudiantes</p>
+            </div>
+            </div>
+           </div>
+        </nav>
+        <article class="centro">
+            <header>
+                <h2 class="h2-desktopwhite"><a href="misCursos.html">Volver</a></h2>
+            </header>
+            <article class="centro__flex">
+            <div class="centro__superior">
+                <div class="miniatura__cont">
+                    <div class="miniaturas__mini">
+                        <div class="foto__mini mini_darkSouls"></div>
+                        <footer>
+                            <p class="p-desktopwhite">Dark Souls</p>
+                            <p class="psec-desktopwhite">Impartido por Alejandro Valverde</p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="info__curso">
+                    <h2 class="h2-desktopwhite">¡Has muerto! La frase que odiarás</h2>
+                    <div class="botones__cont">
+                        <div class="botonblack">
+                            <p class="p-desktopwhite">Multi</p>
+                        </div>
+                        <div class="botonblack">
+                            <p class="p-desktopwhite">RPG</p>
+                        </div>
+                        <div class="botonblack">
+                            <p class="p-desktopwhite">Hard</p>
+                        </div>
+                    </div>
+                    <h3 class="h3-desktopwhite">Sobre este curso</h3>
+                    <p class="p-desktopwhite">Darksouls es para frikis, no es divertido morir cada 5 minutos, etc. Sin duda es un juego lleno de retos y ¡Es maravilloso conseguir completarlo!. En esta guía, te ayudo a sacarle todo el jugo a tu clase favorita. </p>
+                </div>
+            </div>
+            <div class="centro__inferior">
+                <h2 class="h2-desktopwhite">Capitulo 1 - Intro</h2>
+                <iframe src="https://www.youtube.com/embed/W_9jIIVtJbs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                <div>
+                <input type="button" value="Completar y continuar">
+            </div>
+            </div>
+            </div>
+        </article>
+    </main>
+    <main class="mobile">
+        <header class="cabecera">
+            <div class="sec__cabecera" onclick="mainMobile()">
+                <img src="/Archivos/twitch.svg" alt="Logo de la web">
+            </div>
+            <div class="sec__cabecera">
+                <h3 class="h3-mobilewhite">Perfil</h3>
+            </div>
+            <div class="sec__cabecera" onclick="perfil()">
+                <img src="/Archivos/user.svg" alt="Icono similando un torso y una cabeza humanos, indicando el perfil">
+            </div>
+        </header>
+        <article class="centro__flex">
+            <div class="centro__superior">
+                <div class="foto__mini mini_darkSouls"></div>
+                <div class="info__curso">
+                    <p class="p-desktopwhite">¡Has muerto! La frase que odiarás</p>
+                    <div class="botones__cont">
+                        <div class="botonblack">
+                            <p class="p-desktopwhite">Multi</p>
+                        </div>
+                        <div class="botonblack">
+                            <p class="p-desktopwhite">RPG</p>
+                        </div>
+                        <div class="botonblack">
+                            <p class="p-desktopwhite">Hard</p>
+                        </div>
+                    </div>
+                    <p class="p-desktopwhite">Impartido por Alejandro valverde</p>
+                    
+                </div>
+            </div> 
+            <div class="sobreCurso">
+                <h3 class="h3-mobilewhite">Sobre este curso</h3>
+                    <p class="p-desktopwhite info">Darksouls es para frikis, no es divertido morir cada 5 minutos, etc. Sin duda es un juego lleno de retos y ¡Es maravilloso conseguir completarlo!. En esta guía, te ayudo a sacarle todo el jugo a tu clase favorita.</p>
+            </div>         
+            </div>
+            </div>
+        </article>
+    <secion class="mobile pag2">
+        <div class="centro__inferior">
+            <h2 class="h2-mobilewhite">Capitulo 1 - Intro</h2>
+            <iframe src="https://www.youtube.com/embed/W_9jIIVtJbs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              
+                <div>
+            <input type="button" value="Completar y continuar">
+        </div>
+        </div>  
+    </section>
+</main>
+    <script src="/JavaScript/main.js"></script>
+</body>
+</html>

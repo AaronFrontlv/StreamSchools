@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@700&display=swap" rel="stylesheet">       
+    <title>Proyecto2 Aaron</title>
+</head>
+<body>
+    <main class="pagina1">
+    <header class="portada__header">
+        <div class="boton_cont">
+        <input type="button" id="acceso" class="boton__header pboton" value="Acceder" onclick="aparicionAcceso()">
+        <input type="button" id="registro" class="boton__header pboton" value="Registrarse" onclick="aparicionRegistro()">
+    </div>
+    </header>
+    <div id="registrar__form" class="ocultar">
+        <div class="form__cont">      
+        <h3 class="h3-desktopwhite">Registrarse</h3>
+        <div class="form__column">
+        <p class="psec-desktopwhite">Nombre de usuario</p>
+        <input type="text" id="r_name" class="text__form p-desktopwhite" placeholder="Introduce tu nombre de usuario">
+    </div>
+    <div class="form__column">
+        <p class="psec-desktopwhite">Correo electrónico</p>
+        <input type="text" id="r_email"class="text__form p-desktopwhite" placeholder="Introduce tu correo electrónico">
+    </div>
+    <div class="form__column">
+        <p class="psec-desktopwhite">Contraseña</p>
+        <input type="text" id="r_pass" class="text__form p-desktopwhite" placeholder="Introduce tu contraseña">
+        <input type="text" id="r_pass2" class="text__form p-desktopwhite" placeholder="Confirma tu contraseña">
+    </div>
+    <a target="_blank">
+        <input type="button" class="p-desktopwhite boton__registro" onclick="compruebaRegistro()" value="Registrarse">
+        </a>
+    </div>
+    </div>
+    <div id="acceder__form" class="ocultar">
+        <div class="form__cont2">      
+        <h3 class="h3-desktopwhite">Acceder</h3>
+        <div class="form__column">
+        <p class="psec-desktopwhite">Nombre de usuario</p>
+        <input type="text" class="text__form p-desktopwhite" id="f_name" placeholder="Introduce tu nombre de usuario">
+    </div>
+    <div class="form__column">
+        <p class="psec-desktopwhite">Contraseña</p>
+        <input type="text" class="text__form p-desktopwhite" id="f_pass" placeholder="Introduce tu contraseña">
+        <p class="ppass">¿Has olvidado tu contraseña?</p>
+    </div>
+    <a target="_blank">
+        <input type="button" class="p-desktopwhite boton__registro" onclick="autentificar()" value="Acceder">
+        </a>
+    </div>
+    </div>
+    <article class="portada__copy">
+        <h1 class="h1-desktopgold">¿Cansado de intentar tirar del carro?</h1>
+        <h2 class="h2-desktopwhite">Para ser el mejor, has de entrenar con los mejores</h2>
+        <div class="separador"></div>
+        <h3 class="h3-desktopwhite">Accede a guias practicas, diseñadas por ex-jugadores profesionales y conocidos Streamers</h3>
+        <input type="button" class="boton__portada pboton" value="Cuentame mas" onclick="desliza()">
+    </article>
+    </main>
+    <main class="pagina2 desktop">
+        <article class="copy2">
+            <div class="foto_cont"></div>
+            <div class="texto_cont">
+                <h2 class="h2-desktopgold">Estudia mientras te diviertes</h2>
+                <p class="p-desktopwhite copy2_cita">"Yo es que juego para divertirme"</p>
+                <p class="p-desktopwhite">Si estás cansado de oír esta excusa, este es tu sitio. Aprende a tomar el control de tus partidas y lo más importante, ¡no dejes de divertirte en el proceso!</p>
+            </div>
+            <div class="texto_cont">
+                <h2 class="h2-desktopgold">Nos gusta ganar</h2>
+                <p class="p-desktopwhite">
+                    Da igual la plataforma, da igual si es contra amigos, da igual si es contra tu pareja. Por mucho que nos guste un videojuego, lo que más nos gusta es ganar.
+                </p>
+            </div>
+            <div class="foto_cont"></div>
+        </article>
+    </main>
+    <main class="pagina2 movil">
+        <article class="copy2">
+            <div class="foto_cont"></div>
+            <div class="texto_cont">
+                <h2 class="h2-desktopgold">Estudia mientras te diviertes</h2>
+                <p class="p-desktopwhite copy2_cita">"Yo es que juego para divertirme"</p>
+                <p class="p-desktopwhite">Si estás cansado de oír esta excusa, este es tu sitio. Aprende a tomar el control de tus partidas y lo más importante, ¡no dejes de divertirte en el proceso!</p>
+            </div>
+        </article>
+    </main>
+    <main class="pagina3">
+        <header>
+            <h1 class="h1-desktopgold">Top Cursos</h1>
+        </header>
+        <div class="pag3_fotos">
+            <div class="foto_mini valorant-mini"></div>
+            <div class="foto_mini lol-mini"></div>
+            <div class="foto_mini clash-mini"></div>
+        </div>
+        <div class="cont__bot">
+            <input type="button" onclick="verCursos()" class="boton__bot pboton" value="Ver cursos">
+        </div>
+        <div class="todo__inf slideshow-container">
+            
+            <div class="flecha prev" onclick="plusSlides(-1)">
+                <div class="triangulo izquierda">
+                    <div></div>
+                </div> 
+            </div>
+        <div class="testigo__cont mySlides fade">
+                <div class="nivel__sup">
+                    <div class="foto__sup"></div>
+                    <div class="testimonio">
+                        <p class="p-desktopwhite">“La calidad de los cursos me sorprendió…
+                            Pero me sorprendió mas todavía, ¡Lo 
+                            Rápido que logré salir de plata!”</p>
+                    </div>
+                </div>
+                <div class="nivel__inf">
+                    <div class="text__inf">
+                        <p class="p-desktopwhite">Patricia Alcover</p>
+                    </div>
+                    <div class="text__inf">
+                        <p class="p-desktopgold">
+                            Diamante 2, EU-WEST - LOL
+                        </p>
+                    </div>
+                </div>
+                <div class="flecha next" onclick="plusSlides(1)">
+                    <div class="triangulo derecha">
+                        <div></div>
+                    </div> 
+                </div>
+            </div>
+            <div class="testigo__cont mySlides fade">
+                <div class="nivel__sup">
+                    <div class="foto__sup test2"></div>
+                    <div class="testimonio">
+                        <p class="p-desktopwhite">“Llegué hasta esta web por un amigo y 
+                            un par de cursos después, aquí estamos,
+                            en 2k de rating de arenas”</p>
+                    </div>
+                </div>
+                <div class="nivel__inf">
+                    <div class="text__inf">
+                        <p class="p-desktopwhite">Pedro Ibañez</p>
+                    </div>
+                    <div class="text__inf">
+                        <p class="p-desktopgold">
+                            2,1k Rating - Sanguino - Wow
+                        </p>
+                    </div>
+                    <div class="flecha next" onclick="plusSlides(1)">
+                        <div class="triangulo derecha">
+                            <div></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="testigo__cont mySlides fade">
+                <div class="nivel__sup">
+                    <div class="foto__sup test3"></div>
+                    <div class="testimonio">
+                        <p class="p-desktopwhite">“Actualmente estoy luchando por salir de
+                            Grandmaster, gracias a estos maravillosos
+                            cursos. ¡Quién me lo iba a decir!”</p>
+                    </div>
+                </div>
+                <div class="nivel__inf">
+                    <div class="text__inf">
+                        <p class="p-desktopwhite">Raist Fernandez</p>
+                    </div>
+                    <div class="text__inf">
+                        <p class="p-desktopgold">
+                            Grandmaster(3000PL) - EU-WEST - LOL
+                        </p>
+                    </div>
+                    <div class="flecha next" onclick="plusSlides(1)">
+                        <div class="triangulo derecha">
+                            <div></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="testigo__cont mySlides fade">
+                <div class="nivel__sup">
+                    <div class="foto__sup test4"></div>
+                    <div class="testimonio">
+                        <p class="p-desktopwhite">“Los resultados hablan por si solos,
+                            Solo puedo decir que mereció la 
+                            pena y ¡GRACIAS!”</p>
+                    </div>
+                </div>
+                <div class="nivel__inf">
+                    <div class="text__inf">
+                        <p class="p-desktopwhite">Patrick Rofus</p>
+                    </div>
+                    <div class="text__inf">
+                        <p class="p-desktopgold">
+                            Campeones Definitivos - Clash Royale
+                        </p>
+                    </div>
+                    <div class="flecha next" onclick="plusSlides(1)">
+                        <div class="triangulo derecha">
+                            <div></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    </main>
+    
+    <script src="/JavaScript/main.js"></script>
+</body>
+</html>

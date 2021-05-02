@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/coaches.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@700&display=swap" rel="stylesheet">       
+    <title>Proyecto 2</title>
+</head>
+<body>
+    <main class="estructura">
+        <nav class="lateral">
+            <div class="logo">
+                <img src="/Archivos/twitch.svg" alt="Logo de la web, similar al de twitch">
+            </div>
+            <nav class="navegador">
+                <div class="nav__opcion miPerfil noFocus">
+                    <a href="perfil.html" class="p-desktopwhite">Mi perfil</a>
+                </div>
+                <div class="nav__opcion misCursos noFocus">
+                    <a href="misCursos.html" class="p-desktopwhite">Mis cursos</a>
+                </div>
+                <div class="nav__opcion explorarCursos noFocus">
+                    <a href="Explorar.html" class="p-desktopwhite">Explorar Cursos</a>
+                </div>
+                <div class="nav__opcion Rivales noFocus">
+                    <a href="Rivales.html" class="p-desktopwhite">Rivales</a>
+                </div>
+                <div class="nav__opcion Coaches Focus">
+                    <a href="Coaches.html" class="p-desktopblack">Coaches</a>
+                </div>
+            </nav>
+           <div class="populares">
+            <p class="p-desktopwhite">Coaches mas populares</p>
+           </div>
+           <div class="nav__coach">
+            <div class="coach_cont">
+                <div class="coach_foto coach1"></div>
+                <div>
+                <p class="p-desktopwhite">David Alcaparra</p>
+                <p class="psec-desktopwhite">75 Estudiantes</p>
+            </div>
+            </div>
+            <div class="coach_cont">
+                <div class="coach_foto coach2"></div>
+                <div>
+                <p class="p-desktopwhite">Lee Alexander</p>
+                <p class="psec-desktopwhite">67 Estudiantes</p>
+            </div>
+            </div>
+            <div class="coach_cont">
+                <div class="coach_foto coach3"></div>
+                <div>
+                <p class="p-desktopwhite">Maria Gracia</p>
+                <p class="psec-desktopwhite">50 Estudiantes</p>
+            </div>
+            </div>
+            <div class="coach_cont ">
+                <div class="coach_foto coach4"></div>
+                <div>
+                <p class="p-desktopwhite">Alejandro Valverde</p>
+                <p class="psec-desktopwhite">45 Estudiantes</p>
+            </div>
+            </div>
+           </div>
+        </nav>
+        <article class="centro">
+            <header>
+                <h2 class="h2-desktopwhite">Coaches</h2>
+            </header>
+            <div class="todo">
+            <div class="entrenador__flex">
+                <div class="entrenador__foto"></div>
+                <div class="entrenador__inferior">
+                    <p class="p-desktopwhite">David Alcaparra</p>
+                    <div class="rs__cont">
+                        <img src="/Archivos/twitter.svg" class="twitter" alt="Icono de twitter, es un pájaro azul">
+                        <img src="/Archivos/twitchc.svg" class="twitchc" alt="Icono de twitch, simula una caja morada con ojos">
+                        <img src="/Archivos/youtube.svg" class="youtube" alt="Icono de youtube, es una caja roja con un simbolo de reproducción blanco en el centro">
+                    </div>
+                </div>
+                <div class="ver_cursos" onclick="verCursos()">
+                    <p class="pboton">Ver cursos</p>
+                </div>
+            </div>
+            <div class="entrenador__flex">
+                <div class="entrenador__foto lee"></div>
+                <div class="entrenador__inferior">
+                    <p class="p-desktopwhite">Lee Alexander</p>
+                    <div class="rs__cont">
+                        <img src="/Archivos/twitter.svg" class="twitter" alt="Icono de twitter, es un pájaro azul">
+                        <img src="/Archivos/twitchc.svg" class="twitchc" alt="Icono de twitch, simula una caja morada con ojos">
+                        <img src="/Archivos/youtube.svg" class="youtube" alt="Icono de youtube, es una caja roja con un simbolo de reproducción blanco en el centro">
+                    </div>
+                </div>
+                <div class="ver_cursos" onclick="verCursos()">
+                    <p class="pboton">Ver cursos</p>
+                </div>
+            </div>
+            <div class="entrenador__flex">
+                <div class="entrenador__foto maria"></div>
+                <div class="entrenador__inferior">
+                    <p class="p-desktopwhite">Maria Gracia</p>
+                    <div class="rs__cont">
+                        <img src="/Archivos/twitter.svg" class="twitter" alt="Icono de twitter, es un pájaro azul">
+                        <img src="/Archivos/twitchc.svg" class="twitchc" alt="Icono de twitch, simula una caja morada con ojos">
+                        <img src="/Archivos/youtube.svg" class="youtube" alt="Icono de youtube, es una caja roja con un simbolo de reproducción blanco en el centro">
+                    </div>
+                </div>
+                <div class="ver_cursos" onclick="verCursos()">
+                    <p class="pboton">Ver cursos</p>
+                </div>
+            </div>
+            <div class="entrenador__flex">
+                <div class="entrenador__foto alex"></div>
+                <div class="entrenador__inferior">
+                    <p class="p-desktopwhite">Alejandro Valverde</p>
+                    <div class="rs__cont">
+                        <img src="/Archivos/twitter.svg" class="twitter" alt="Icono de twitter, es un pájaro azul">
+                        <img src="/Archivos/twitchc.svg" class="twitchc" alt="Icono de twitch, simula una caja morada con ojos">
+                        <img src="/Archivos/youtube.svg" class="youtube" alt="Icono de youtube, es una caja roja con un simbolo de reproducción blanco en el centro">
+                    </div>
+                </div>
+                <div class="ver_cursos" onclick="verCursos()">
+                    <p class="pboton">Ver cursos</p>
+                </div>
+            </div>
+        </div>
+        </article>
+    </main>
+    <main class="mobile">
+        <header class="cabecera">
+            <div class="sec__cabecera" onclick="mainMobile()">
+                <img src="/Archivos/twitch.svg" alt="Logo de la web">
+            </div>
+            <div class="sec__cabecera">
+                <h3 class="h3-mobilewhite">Coaches</h3>
+            </div>
+            <div class="sec__cabecera" onclick="perfil()">
+                <img src="/Archivos/user.svg" alt="Icono similando un torso y una cabeza humanos, indicando el perfil">
+            </div>
+        </header>
+        <div class="mobile__flex">
+            <div class="flex__izq">
+                <div class="foto mobileDavid">
+                </div>
+                <div class="izq__rss">
+                    <img src="/Archivos/twitter.svg" class="twitter" alt="Icono de twitter, es un pájaro azul">
+                    <img src="/Archivos/twitchc.svg" class="twitchc" alt="Icono de twitch, simula una caja morada con ojos">
+                    <img src="/Archivos/youtube.svg" class="youtube" alt="Icono de youtube, es una caja roja con un simbolo de reproducción blanco en el centro">
+                </div>
+            </div>
+            <div class="flex__der">
+                <h3 class="h3-mobilewhite">Sobre mi</h3>
+            <p class="p-desktopwhite">Soy David Alcaparra, tras 10 años dedicándome a retransmitir Esports he decidido dar un paso adelante y compartir mis conocimientos con las nuevas generaciones.</p>
+            </div>
+        </div>
+        <div class="ver_cursos" onclick="verCursos()">
+            <p class="pboton">Ver cursos</p>
+        </div>
+        <div class="mobile__flex">
+            <div class="flex__izq">
+                <div class="foto mobileMaria">
+                </div>
+                <div class="izq__rss">
+                    <img src="/Archivos/twitter.svg" class="twitter" alt="Icono de twitter, es un pájaro azul">
+                    <img src="/Archivos/twitchc.svg" class="twitchc" alt="Icono de twitch, simula una caja morada con ojos">
+                    <img src="/Archivos/youtube.svg" class="youtube" alt="Icono de youtube, es una caja roja con un simbolo de reproducción blanco en el centro">
+                </div>
+            </div>
+            <div class="flex__der">
+                <h3 class="h3-mobilewhite">Sobre mi</h3>
+            <p class="p-desktopwhite">Qué onda?! Soy Maria Gracia, me he pasado la vida entre ordenadores y tras un par de años de compitiendo, he decidido dar un vuelco profesional :). </p>
+            </div>
+        </div>
+        <div class="ver_cursos" onclick="verCursos()">
+            <p class="pboton">Ver cursos</p>
+        </div>
+        <div class="mobile__flex">
+            <div class="flex__izq">
+                <div class="foto mobileLee">
+                </div>
+                <div class="izq__rss">
+                    <img src="/Archivos/twitter.svg" class="twitter" alt="Icono de twitter, es un pájaro azul">
+                    <img src="/Archivos/twitchc.svg" class="twitchc" alt="Icono de twitch, simula una caja morada con ojos">
+                    <img src="/Archivos/youtube.svg" class="youtube" alt="Icono de youtube, es una caja roja con un simbolo de reproducción blanco en el centro">
+                </div>
+            </div>
+            <div class="flex__der">
+                <h3 class="h3-mobilewhite">Sobre mi</h3>
+            <p class="p-desktopwhite">Si los juegos de móvil son tu pasión, estoy seguro de que con mis cursos podrás llegar a lo mas alto!. Pd: Soy Lee Alexander. ¡Casi se me olvida!.</p>
+            </div>
+        </div>
+        <div class="ver_cursos" onclick="verCursos()">
+            <p class="pboton">Ver cursos</p>
+        </div>
+        <div class="mobile__flex">
+            <div class="flex__izq">
+                <div class="foto mobileAlejandro">
+                </div>
+                <div class="izq__rss">
+                    <img src="/Archivos/twitter.svg" class="twitter" alt="Icono de twitter, es un pájaro azul">
+                    <img src="/Archivos/twitchc.svg" class="twitchc" alt="Icono de twitch, simula una caja morada con ojos">
+                    <img src="/Archivos/youtube.svg" class="youtube" alt="Icono de youtube, es una caja roja con un simbolo de reproducción blanco en el centro">
+                </div>
+            </div>
+            <div class="flex__der">
+                <h3 class="h3-mobilewhite">Sobre mi</h3>
+            <p class="p-desktopwhite">Soy Alejandro Valverde, YouTuber y Streamer desde hace 6 años. Ayúdame a crecer y yo te ayudaré a Triunfar. 
+                ¿Hay Trato?</p>
+            </div>
+        </div>
+        <div class="ver_cursos" onclick="verCursos()">
+            <p class="pboton">Ver cursos</p>
+        </div>
+</main>
+    <script src="/JavaScript/main.js"></script>
+</body>
+</html>
